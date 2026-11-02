@@ -1,11 +1,14 @@
-name: Build SynthaX APK
+name: Build and Release SynthaX APK
 
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    tags:
+      - 'v*'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -30,8 +33,25 @@ jobs:
     - name: Build Debug APK
       run: ./gradlew assembleDebug --stacktrace
 
-    - name: Upload Debug APK
+    - name: Upload Debug APK Artifact
       uses: actions/upload-artifact@v4
       with:
         name: SynthaX-v1.0.0-debug
         path: app/build/outputs/apk/debug/app-debug.apk
+
+    - name: Create or Update GitHub Release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: v1.0.0
+        name: SynthaX v1.0.0 Release
+        body: |
+          ### SynthaX v1.0.0 Official Release
+          - Open-Source Android Music Player by **FURYAXL**
+          - Kotlin, Jetpack Compose (Material 3), Media3 (ExoPlayer + MediaSession), Room, Hilt
+          - Download `app-debug.apk` below to install directly on your Android phone!
+        files: |
+          app/build/outputs/apk/debug/app-debug.apk
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
