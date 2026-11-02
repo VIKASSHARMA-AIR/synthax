@@ -1,10 +1,10 @@
-# FuryWave
+# SynthaX
 
 An open-source Android music player by **FURYAXL**.
 
 - Kotlin, Jetpack Compose, Media3, Room, Hilt
 - Plays local music; streaming support via your own or licensed catalogs
-- Package: `com.furyaxl.furywave`
+- Package: `com.furyaxl.synthax`
 - License: MIT
 
 ## Build
@@ -21,7 +21,7 @@ An open-source Android music player by **FURYAXL**.
 - **Asynchronous**: Kotlin Coroutines & StateFlow
 
 ## Music content
-FuryWave ships with no music. Use files you own or catalogs whose license allows it
+SynthaX ships with no music. Use files you own or catalogs whose license allows it
 (for example Creative Commons sources, with attribution).
 
 ## Contributing

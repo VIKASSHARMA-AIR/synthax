@@ -1,4 +1,4 @@
-# ProGuard rules for FuryWave
+# ProGuard rules for SynthaX
 -keepattributes *Annotation*
 -dontwarn javax.annotation.**
 

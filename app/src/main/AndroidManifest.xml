@@ -10,13 +10,13 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-        android:name=".FuryWaveApp"
+        android:name=".SynthaXApp"
         android:allowBackup="true"
         android:icon="@android:drawable/ic_media_play"
         android:label="@string/app_name"
         android:roundIcon="@android:drawable/ic_media_play"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FuryWave">
+        android:theme="@style/Theme.SynthaX">
 
         <activity
             android:name=".MainActivity"

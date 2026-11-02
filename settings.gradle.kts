@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "FuryWave"
+rootProject.name = "SynthaX"
 include(":app")
 

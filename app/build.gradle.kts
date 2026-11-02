@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.furyaxl.furywave"
+    namespace = "com.furyaxl.synthax"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.furyaxl.furywave"
+        applicationId = "com.furyaxl.synthax"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
