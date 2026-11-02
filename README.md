@@ -26,3 +26,4 @@ FuryWave ships with no music. Use files you own or catalogs whose license allows
 
 ## Contributing
 Pull requests are welcome. Please do not submit code or assets copied from other apps.
+
